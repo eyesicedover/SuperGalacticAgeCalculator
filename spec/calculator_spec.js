@@ -138,9 +138,9 @@ describe ("Character", function () {
     let ageDiffs = newCalculator.differenceOfAges(convertedAges, convertedLifeExpAges);
 
     //Assert
-    expect(ageDiffs[0]).toBeGreaterThan(300);
-    expect(ageDiffs[1]).toBeGreaterThan(300);
-    expect(ageDiffs[2]).toBeGreaterThan(300);
-    expect(ageDiffs[3]).toBeGreaterThan(300);
+    expect(ageDiffs[0]).toBeGreaterThan(248);
+    expect(ageDiffs[1]).toBeGreaterThan(96);
+    expect(ageDiffs[2]).toBeGreaterThan(31);
+    expect(ageDiffs[3]).toBeGreaterThan(5);
   })
 });
