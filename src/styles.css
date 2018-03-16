@@ -26,6 +26,6 @@ body {
   height: 100%;
 }
 
-#result {
+#result, #deathExp {
   display: none;
 }

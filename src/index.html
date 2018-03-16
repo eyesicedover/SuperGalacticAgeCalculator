@@ -18,7 +18,7 @@
           <hr>
           <form class="form-group" id="userForm">
             <label for="userDate">Enter your bithdate:</label>
-            <input type="date" name="userDate" class="form-control" id="userDate">
+            <input type="date" name="userDate" id="userDate">
             <hr>
             <button type="submit" class="btn btn-danger">Submit</button>
           </form>
@@ -29,7 +29,23 @@
           <h3>Your age on Mars is: <span class="marsAge"></span> years</h3>
           <h3>Your age on Jupiter is: <span class="jupiterAge"></span> years</h3>
           <hr>
-          <p>How old do you think you'll live to on Earth? We can convert this dark knowledge to the years on other planets.</p>
+          <p>How old do you think you'll live to be on Earth? We can convert this dark knowledge to the years left you'd have on other planets.</p>
+          <form class="form-group" id="deathForm">
+            <label for="userDeath">Enter the age ya think ya gonna die on Earth:</label>
+            <input type="number" name="userDeath" id="userDeath">
+            <hr>
+            <button type="submit" class="btn btn-danger">Think About the Void!</button>
+          </form>
+        </div>
+        <div class="well" id="deathExp">
+          <h2>Life Expectancy: <span class="deathExp"></span> Earth years</h2>
+          <hr>
+          <h3>Your have <span class="mercuryYears"></span> Mercurian years left</h3>
+          <h3>Your have <span class="venusYears"></span> Venusian years left</h3>
+          <h3>Your have <span class="marsYears"></span> Martian years left</h3>
+          <h3>Your have <span class="jupiterYears"></span> Jupiterian years left</h3>
+          <hr>
+          <h4>Aren't you glad you thought about your inevitable end. Anyways, have a good day.</h4>
         </div>
       </div>
     </div>
