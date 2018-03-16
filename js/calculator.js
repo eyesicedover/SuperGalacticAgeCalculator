@@ -30,4 +30,9 @@ export class Calculator {
     let convertedAge = this.userAge/.62;
     return convertedAge;
   }
+
+  calculateMarsAge() {
+    let convertedAge = this.userAge/1.88;
+    return convertedAge;
+  }
 }

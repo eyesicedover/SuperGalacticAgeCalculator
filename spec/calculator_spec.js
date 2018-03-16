@@ -78,4 +78,21 @@ describe ("Character", function () {
     //Assert
     expect(venusAge).toBeGreaterThan(40);
   })
+
+  it("will validate that calculateMarsAge will give the users age in Mercurian years", function() {
+    //Arrange
+    let newCalculator = new Calculator();
+    //age should be at least 25 at this time
+    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.todaysDate = new Date();
+    newCalculator.convertToSeconds();
+    newCalculator.ageInSeconds();
+    newCalculator.determineAge();
+
+    //Act
+    let marsAge = newCalculator.calculateMarsAge();
+
+    //Assert
+    expect(marsAge).toBeGreaterThan(40);
+  })
 });
