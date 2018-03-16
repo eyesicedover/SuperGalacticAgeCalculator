@@ -20,4 +20,9 @@ export class Calculator {
   determineAge() {
     this.userAge = (this.userAgeInSeconds/31536000);
   }
+
+  calculateMercuryAge() {
+    let convertedAge = this.userAge/.24;
+    return convertedAge;
+  }
 }

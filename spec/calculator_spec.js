@@ -44,4 +44,21 @@ describe ("Character", function () {
     //Assert
     expect(newCalculator.userAge).toBeGreaterThan(25);
   })
+
+  it("will validate that calculateMercuryAge will give the users age in Mercurian years", function() {
+    //Arrange
+    let newCalculator = new Calculator();
+    //age should be at least 25 at this time
+    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.todaysDate = new Date();
+    newCalculator.convertToSeconds();
+    newCalculator.ageInSeconds();
+    newCalculator.determineAge();
+
+    //Act
+    let mercuryAge = newCalculator.calculateMercuryAge();
+
+    //Assert
+    expect(mercuryAge).toBeGreaterThan(50000);
+  })
 });
