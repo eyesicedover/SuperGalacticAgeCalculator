@@ -110,6 +110,6 @@ describe ("Character", function () {
     let jupiterAge = newCalculator.calculateJupiterAge();
 
     //Assert
-    expect(jupiterAge).toBeGreaterThan(13);
+    expect(jupiterAge).toBeGreaterThan(2);
   })
 });
