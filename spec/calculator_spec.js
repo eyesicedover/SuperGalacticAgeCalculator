@@ -93,6 +93,6 @@ describe ("Character", function () {
     let marsAge = newCalculator.calculateMarsAge();
 
     //Assert
-    expect(marsAge).toBeGreaterThan(40);
+    expect(marsAge).toBeGreaterThan(13);
   })
 });
