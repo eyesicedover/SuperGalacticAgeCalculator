@@ -11,4 +11,9 @@ export class Calculator {
     this.userDateInSeconds = ((this.userDate.getTime())/1000);
     this.todaysDateInSeconds = ((this.todaysDate.getTime())/1000);
   }
+
+  determineAge() {
+    let ageInSeconds = this.todaysDateInSeconds - this.userDateInSeconds;
+    this.userAge = (ageInSeconds/31536000);
+  }
 }
