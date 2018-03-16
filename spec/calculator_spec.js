@@ -112,11 +112,6 @@ describe ("Character", function () {
   it("will validate that convertAllPlanetAges will take an input age in years and return an array with that number converted to each age", function() {
     //Arrange
     let newCalculator = new Calculator();
-    newCalculator.userDate = new Date("December 12, 1992");
-    newCalculator.todaysDate = new Date();
-    newCalculator.convertToSeconds();
-    newCalculator.ageInSeconds();
-    newCalculator.determineAge();
 
     //Act
     let convertedAges = newCalculator.convertAllPlanetAges(85);
@@ -126,5 +121,26 @@ describe ("Character", function () {
     expect(convertedAges[1]).toBeGreaterThan(137);
     expect(convertedAges[2]).toBeGreaterThan(45);
     expect(convertedAges[3]).toBeGreaterThan(7);
+  })
+
+  it("will validate that differenceofAges will return the difference of ages in two arrays", function() {
+    //Arrange
+    let newCalculator = new Calculator();
+    newCalculator.userDate = new Date("December 12, 1992");
+    newCalculator.todaysDate = new Date();
+    newCalculator.convertToSeconds();
+    newCalculator.ageInSeconds();
+    newCalculator.determineAge();
+    let convertedAges = newCalculator.convertAllPlanetAges(newCalculator.userAge);
+    let convertedLifeExpAges = newCalculator.convertAllPlanetAges(85);
+
+    //Act
+    let ageDiffs = newCalculator.differenceOfAges(convertedAges, convertedLifeExpAges);
+
+    //Assert
+    expect(ageDiffs[0]).toBeGreaterThan(300);
+    expect(ageDiffs[1]).toBeGreaterThan(300);
+    expect(ageDiffs[2]).toBeGreaterThan(300);
+    expect(ageDiffs[3]).toBeGreaterThan(300);
   })
 });

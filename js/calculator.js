@@ -50,5 +50,11 @@ export class Calculator {
     return allAges;
   }
 
-  
+  differenceOfAges(userAges, allLifeExpAges) {
+    let allAgeDiff = [];
+    for (var i = 0; i < userAges.length; i++) {
+      allAgeDiff.push(allLifeExpAges[i] - userAges[i]);
+    }
+    return allAgeDiff;
+  }
 }
