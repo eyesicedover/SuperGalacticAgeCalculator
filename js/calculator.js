@@ -41,6 +41,19 @@ export class Calculator {
     return convertedAge;
   }
 
+  //method to save space
+  runCalc() {
+    let allConvertedAges = [];
+    this.convertToSeconds();
+    this.ageInSeconds();
+    this.determineAge();
+    allConvertedAges.push(this.calculateMercuryAge(this.userAge));
+    allConvertedAges.push(this.calculateVenusAge(this.userAge));
+    allConvertedAges.push(this.calculateMarsAge(this.userAge));
+    allConvertedAges.push(this.calculateJupiterAge(this.userAge));
+    return allConvertedAges;
+  }
+
   convertAllPlanetAges(age) {
     let allAges = [];
     allAges.push(this.calculateMercuryAge(age));

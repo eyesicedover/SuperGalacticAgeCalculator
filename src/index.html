@@ -3,10 +3,35 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
     <meta charset="utf-8">
     <title>Super Galactic Age Calculator</title>
   </head>
   <body>
-
+    <div class="bg">
+      <div class="jumbotron text-center">
+        <h1>Super Galactic Age Calculator</h1>
+      </div>
+      <div class="container text-center">
+        <div class="well">
+          <h4>Find out how old you are on other planets!</h4>
+          <hr>
+          <form class="form-group" id="userForm">
+            <label for="userDate">Enter your bithdate:</label>
+            <input type="date" name="userDate" class="form-control" id="userDate">
+            <hr>
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+        <div class="well" id="result">
+          <h3>Your age on Mercury is: <span class="mercuryAge"></span> years</h3>
+          <h3>Your age on Venus is: <span class="venusAge"></span> years</h3>
+          <h3>Your age on Mars is: <span class="marsAge"></span> years</h3>
+          <h3>Your age on Jupiter is: <span class="jupiterAge"></span> years</h3>
+          <hr>
+          <p>How old do you think you'll live to on Earth? We can convert this dark knowledge to the years on other planets.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

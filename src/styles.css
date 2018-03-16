@@ -1,4 +1,31 @@
+html {
+  height: 100%;
+}
 body {
   color: #D3326D;
-  background-color: #7B435B;
+  height: 100%;
+}
+
+.jumbotron {
+  font-family: 'Righteous', cursive;
+  background-color: #682a1f;
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg {
+  background-image: url("https://apod.nasa.gov/apod/image/1803/HH-HST-ESO-Sgendler1024.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+#result {
+  display: none;
 }
