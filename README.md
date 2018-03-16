@@ -47,37 +47,19 @@ _This is a project designed to take a user input of a birth date and calculate t
 
 * _Download and install Node_
 
-* _Download and install .NET runtime_
+* _Open command prompt (or your preferred command line shell), navigate to project directory, and run >npm install_
 
-* _Download and install Mono for your platform_
+* _In console enter >npm build_
 
-* _Download and install MAMP for your platform_
+* _Check for errors. If there are any, please report them to me at my email address included on this README_
 
-* _Open MAMP and use the default ports_
+* _In console enter >npm run start_
 
-* _In Mono command prompt, type >mysql -uroot -proot_
+* _The program should open in a new Chrome window_
 
-* _In mysql shell type >CREATE DATABASE stephanie_faber_
+* _Use the program_
 
-* _In mysql shell type >USE stephanie_faber_
-
-* _In mysql shell type >CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR(255));_
-
-* _In mysql shell type >CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR(255), stylistId INT(11));_
-
-* _In mysql shell type >QUIT_
-
-* _In Mono command prompt, navigate to this project's folder_
-
-* _In Mono command prompt, enter >dotnet restore_
-
-* _In Mono command prompt, enter >dotnet build_
-
-* _If there are no errors: In Mono command prompt, enter >dotnet run_
-
-* _If there is an error, please contact me via email and describe your issue_
-
-* _When the command prompt runs the build, enter localhost:5000 to your web browser. This should take you to the index page._
+* _When ready to quit, close the Chrome window and hold control+c to terminate the program in console_
 
 Github Repository Link (https://github.com/eyesicedover/HairSalon)
 
@@ -88,12 +70,13 @@ _Please email me directly at eyesicedover@gmail.com_
 ## Technologies Used
 
 * HTML
-* ASP.NET
-* Razor
-* .NET Core
-* .NET SDK
-* MAMP
-* mysql
+* Jquery
+* Bootstrap
+* Node
+* npm
+* Jasmine
+* Karma
+* Lint
 
 ### License
 
