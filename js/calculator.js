@@ -35,4 +35,9 @@ export class Calculator {
     let convertedAge = this.userAge/1.88;
     return convertedAge;
   }
+
+  calculateJupiterAge() {
+    let convertedAge = this.userAge/11.86;
+    return convertedAge;
+  }
 }

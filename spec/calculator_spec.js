@@ -62,7 +62,7 @@ describe ("Character", function () {
     expect(mercuryAge).toBeGreaterThan(105);
   })
 
-  it("will validate that calculateVenusAge will give the users age in Mercurian years", function() {
+  it("will validate that calculateVenusAge will give the users age in Venusian years", function() {
     //Arrange
     let newCalculator = new Calculator();
     //age should be at least 25 at this time
@@ -79,7 +79,7 @@ describe ("Character", function () {
     expect(venusAge).toBeGreaterThan(40);
   })
 
-  it("will validate that calculateMarsAge will give the users age in Mercurian years", function() {
+  it("will validate that calculateMarsAge will give the users age in Martian years", function() {
     //Arrange
     let newCalculator = new Calculator();
     //age should be at least 25 at this time
@@ -94,5 +94,22 @@ describe ("Character", function () {
 
     //Assert
     expect(marsAge).toBeGreaterThan(13);
+  })
+
+  it("will validate that calculateJupiterAge will give the users age in Jupiterian years", function() {
+    //Arrange
+    let newCalculator = new Calculator();
+    //age should be at least 25 at this time
+    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.todaysDate = new Date();
+    newCalculator.convertToSeconds();
+    newCalculator.ageInSeconds();
+    newCalculator.determineAge();
+
+    //Act
+    let jupiterAge = newCalculator.calculateJupiterAge();
+
+    //Assert
+    expect(jupiterAge).toBeGreaterThan(13);
   })
 });
