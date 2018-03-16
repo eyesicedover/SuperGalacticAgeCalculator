@@ -1,11 +1,11 @@
 {
   "name": "sgac",
   "version": "1.0.0",
-  "description": "",
+  "description": "_This is a project designed to take a user input of a birth date and calculate their age on another planet, such as Mars. The project will also display the user's life expectancy._",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development;",
+    "start": "npm run build && webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "karma start karma.conf.js"
   },
@@ -32,5 +32,6 @@
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^3.1.0"
-  }
+  },
+  "dependencies": {}
 }
