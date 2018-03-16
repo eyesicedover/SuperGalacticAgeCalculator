@@ -21,23 +21,32 @@ export class Calculator {
     this.userAge = (this.userAgeInSeconds/31536000);
   }
 
-  calculateMercuryAge() {
-    let convertedAge = this.userAge/.24;
+  calculateMercuryAge(age) {
+    let convertedAge = age/.24;
     return convertedAge;
   }
 
-  calculateVenusAge() {
-    let convertedAge = this.userAge/.62;
+  calculateVenusAge(age) {
+    let convertedAge = age/.62;
     return convertedAge;
   }
 
-  calculateMarsAge() {
-    let convertedAge = this.userAge/1.88;
+  calculateMarsAge(age) {
+    let convertedAge = age/1.88;
     return convertedAge;
   }
 
-  calculateJupiterAge() {
-    let convertedAge = this.userAge/11.86;
+  calculateJupiterAge(age) {
+    let convertedAge = age/11.86;
     return convertedAge;
+  }
+
+  lifeExpectancy(expAge) {
+    let allExpAges = [];
+    allExpAges.push(this.calculateMercuryAge(expAge));
+    allExpAges.push(this.calculateVenusAge(expAge));
+    allExpAges.push(this.calculateMarsAge(expAge));
+    allExpAges.push(this.calculateJupiterAge(expAge));
+    return allExpAges;
   }
 }
