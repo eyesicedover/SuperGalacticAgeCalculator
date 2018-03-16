@@ -12,7 +12,21 @@ describe ("Character", function () {
 
     //Assert
     expect(newCalculator.userDateInSeconds).toEqual(724147200);
-    expect(newCalculator.todaysDateInSeconds).not.toBeLessThan(724147200);
+    expect(newCalculator.todaysDateInSeconds).toBeGreaterThan(724147200);
+  })
+
+  it("will validate that ageInSeconds will give an age in seconds", function() {
+    //Arrange
+    let newCalculator = new Calculator();
+    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.todaysDate = new Date();
+    newCalculator.convertToSeconds();
+
+    //Act
+    newCalculator.ageInSeconds();
+
+    //Assert
+    expect(newCalculator.userAgeInSeconds).not.toBeGreaterThan(797076883);
   })
 
   it("will validate that determineAge will give an age in years", function() {
@@ -22,11 +36,12 @@ describe ("Character", function () {
     newCalculator.userDate = new Date("Decembter 12, 1992");
     newCalculator.todaysDate = new Date();
     newCalculator.convertToSeconds();
+    newCalculator.ageInSeconds();
 
     //Act
     newCalculator.determineAge();
 
     //Assert
-    expect(newCalculator.userAge).not.toBeLessThan(25);
+    expect(newCalculator.userAge).toBeGreaterThan(25);
   })
 });
