@@ -11,7 +11,7 @@ describe ("Character", function () {
     newCalculator.convertToSeconds();
 
     //Assert
-    expect(newCalculator.userDateInSeconds).toEqual(10);
-    expect(newCalculator.todaysDateInSeconds).not.toBeLessThan(10);
+    expect(newCalculator.userDateInSeconds).toEqual(724147200);
+    expect(newCalculator.todaysDateInSeconds).not.toBeLessThan(724147200);
   })
 });
