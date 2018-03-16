@@ -122,9 +122,9 @@ describe ("Character", function () {
     let convertedAges = newCalculator.lifeExpectancy(85);
 
     //Assert
-    expect(convertedAges[0]).toBeGreaterThan(500);
-    expect(convertedAges[1]).toBeGreaterThan(500);
-    expect(convertedAges[2]).toBeGreaterThan(500);
-    expect(convertedAges[3]).toBeGreaterThan(500);
+    expect(convertedAges[0]).toBeGreaterThan(350);
+    expect(convertedAges[1]).toBeGreaterThan(137);
+    expect(convertedAges[2]).toBeGreaterThan(45);
+    expect(convertedAges[3]).toBeGreaterThan(7);
   })
 });
