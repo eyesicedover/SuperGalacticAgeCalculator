@@ -41,12 +41,14 @@ export class Calculator {
     return convertedAge;
   }
 
-  lifeExpectancy(expAge) {
-    let allExpAges = [];
-    allExpAges.push(this.calculateMercuryAge(expAge));
-    allExpAges.push(this.calculateVenusAge(expAge));
-    allExpAges.push(this.calculateMarsAge(expAge));
-    allExpAges.push(this.calculateJupiterAge(expAge));
-    return allExpAges;
+  convertAllPlanetAges(age) {
+    let allAges = [];
+    allAges.push(this.calculateMercuryAge(age));
+    allAges.push(this.calculateVenusAge(age));
+    allAges.push(this.calculateMarsAge(age));
+    allAges.push(this.calculateJupiterAge(age));
+    return allAges;
   }
+
+  
 }

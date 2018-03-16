@@ -4,7 +4,7 @@ describe ("Character", function () {
   it("will validate that convertToSeconds will convert a dateTime to seconds", function() {
     //Arrange
     let newCalculator = new Calculator();
-    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.userDate = new Date("December 12, 1992");
     newCalculator.todaysDate = new Date();
 
     //Act
@@ -18,7 +18,7 @@ describe ("Character", function () {
   it("will validate that ageInSeconds will give an age in seconds", function() {
     //Arrange
     let newCalculator = new Calculator();
-    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.userDate = new Date("December 12, 1992");
     newCalculator.todaysDate = new Date();
     newCalculator.convertToSeconds();
 
@@ -33,7 +33,7 @@ describe ("Character", function () {
     //Arrange
     let newCalculator = new Calculator();
     //age should be at least 25 at this time
-    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.userDate = new Date("December 12, 1992");
     newCalculator.todaysDate = new Date();
     newCalculator.convertToSeconds();
     newCalculator.ageInSeconds();
@@ -48,7 +48,7 @@ describe ("Character", function () {
   it("will validate that calculateMercuryAge will give the users age in Mercurian years", function() {
     //Arrange
     let newCalculator = new Calculator();
-    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.userDate = new Date("December 12, 1992");
     newCalculator.todaysDate = new Date();
     newCalculator.convertToSeconds();
     newCalculator.ageInSeconds();
@@ -64,7 +64,7 @@ describe ("Character", function () {
   it("will validate that calculateVenusAge will give the users age in Venusian years", function() {
     //Arrange
     let newCalculator = new Calculator();
-    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.userDate = new Date("December 12, 1992");
     newCalculator.todaysDate = new Date();
     newCalculator.convertToSeconds();
     newCalculator.ageInSeconds();
@@ -80,7 +80,7 @@ describe ("Character", function () {
   it("will validate that calculateMarsAge will give the users age in Martian years", function() {
     //Arrange
     let newCalculator = new Calculator();
-    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.userDate = new Date("December 12, 1992");
     newCalculator.todaysDate = new Date();
     newCalculator.convertToSeconds();
     newCalculator.ageInSeconds();
@@ -96,7 +96,7 @@ describe ("Character", function () {
   it("will validate that calculateJupiterAge will give the users age in Jupiterian years", function() {
     //Arrange
     let newCalculator = new Calculator();
-    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.userDate = new Date("December 12, 1992");
     newCalculator.todaysDate = new Date();
     newCalculator.convertToSeconds();
     newCalculator.ageInSeconds();
@@ -109,17 +109,17 @@ describe ("Character", function () {
     expect(jupiterAge).toBeGreaterThan(2);
   })
 
-  it("will validate that lifeExpectancy will take an input age in years and return an array with that number converted to each age", function() {
+  it("will validate that convertAllPlanetAges will take an input age in years and return an array with that number converted to each age", function() {
     //Arrange
     let newCalculator = new Calculator();
-    newCalculator.userDate = new Date("Decembter 12, 1992");
+    newCalculator.userDate = new Date("December 12, 1992");
     newCalculator.todaysDate = new Date();
     newCalculator.convertToSeconds();
     newCalculator.ageInSeconds();
     newCalculator.determineAge();
 
     //Act
-    let convertedAges = newCalculator.lifeExpectancy(85);
+    let convertedAges = newCalculator.convertAllPlanetAges(85);
 
     //Assert
     expect(convertedAges[0]).toBeGreaterThan(350);
