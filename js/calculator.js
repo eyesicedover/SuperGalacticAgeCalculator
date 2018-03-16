@@ -25,4 +25,9 @@ export class Calculator {
     let convertedAge = this.userAge/.24;
     return convertedAge;
   }
+
+  calculateVenusAge() {
+    let convertedAge = this.userAge/.62;
+    return convertedAge;
+  }
 }
