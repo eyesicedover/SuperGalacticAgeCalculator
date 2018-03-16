@@ -27,6 +27,6 @@ describe ("Character", function () {
     newCalculator.determineAge();
 
     //Assert
-    expect(newCalculator.userAge).not.toBeLessThan(30);
+    expect(newCalculator.userAge).not.toBeLessThan(25);
   })
 });
