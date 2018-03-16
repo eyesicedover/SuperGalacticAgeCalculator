@@ -47,7 +47,7 @@ _This is a project designed to take a user input of a birth date and calculate t
 
 * _Download and install Node_
 
-* _Open command prompt (or your preferred command line shell), navigate to project directory, and run >npm install_
+* _Open command prompt (or your preferred command line shell), navigate to project directory, and enter >npm install_
 
 * _In console enter >npm build_
 
