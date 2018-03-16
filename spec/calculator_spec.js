@@ -59,6 +59,6 @@ describe ("Character", function () {
     let mercuryAge = newCalculator.calculateMercuryAge();
 
     //Assert
-    expect(mercuryAge).toBeGreaterThan(50000);
+    expect(mercuryAge).toBeGreaterThan(105);
   })
 });
