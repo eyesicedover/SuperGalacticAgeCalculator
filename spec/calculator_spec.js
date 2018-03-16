@@ -76,6 +76,6 @@ describe ("Character", function () {
     let venusAge = newCalculator.calculateVenusAge();
 
     //Assert
-    expect(venusAge).toBeGreaterThan(105);
+    expect(venusAge).toBeGreaterThan(40);
   })
 });
