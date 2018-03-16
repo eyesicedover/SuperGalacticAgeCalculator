@@ -26,7 +26,7 @@ describe ("Character", function () {
     newCalculator.ageInSeconds();
 
     //Assert
-    expect(newCalculator.userAgeInSeconds).not.toBeGreaterThan(797076883);
+    expect(newCalculator.userAgeInSeconds).toBeGreaterThan(797076883);
   })
 
   it("will validate that determineAge will give an age in years", function() {
