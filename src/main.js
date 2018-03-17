@@ -4,7 +4,7 @@ import './styles.css';
 
 $(document).ready(function() {
   let newCalculator = new Calculator();
-  $("#userForm").submit(function(event) {
+  $("Form#userForm").submit(function(event) {
     event.preventDefault();
     let userDate = $("input#userDate").val();
     newCalculator.userDate = new Date(userDate);
@@ -17,20 +17,21 @@ $(document).ready(function() {
     $("#result").fadeIn();
   });
 
-  $("#deathForm").submit(function(event) {
+  $("Form#deathForm").submit(function(event) {
     event.preventDefault();
     let deathAge = $("input#userDeath").val();
     deathAge = parseInt(deathAge);
     let userAge = newCalculator.userAge;
     let agesArray = newCalculator.convertAllPlanetAges(userAge);
     let deathArray = newCalculator.convertAllPlanetAges(deathAge);
-
     let ageDiff = newCalculator.differenceOfAges(agesArray, deathArray);
-    $(".mercuryYeats").text(ageDiff[0].toFixed(2));
+
+    $(".deathExp").text(deathAge);
+      $(".earthYears").text((deathAge - newCalculator.userAge).toFixed(2));
+    $(".mercuryYears").text(ageDiff[0].toFixed(2));
     $(".venusYears").text(ageDiff[1].toFixed(2));
     $(".marsYears").text(ageDiff[2].toFixed(2));
     $(".jupiterYears").text(ageDiff[3].toFixed(2));
-    $("#deathYears").fadeIn();
-
+    $("#deathExp").fadeIn();
   });
 });

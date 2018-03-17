@@ -1,9 +1,17 @@
 html {
-  height: 100%;
+  min-height: 100%;
 }
+
 body {
   color: #D3326D;
-  height: 100%;
+  background-image: url("https://apod.nasa.gov/apod/image/1803/HH-HST-ESO-Sgendler1024.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
 }
 
 .jumbotron {
@@ -13,17 +21,6 @@ body {
 
 .container {
   font-family: 'Roboto', sans-serif;
-}
-
-.bg {
-  background-image: url("https://apod.nasa.gov/apod/image/1803/HH-HST-ESO-Sgendler1024.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
 }
 
 #result, #deathExp {
